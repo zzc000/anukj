@@ -47,7 +47,7 @@
                         </button>
                         <a class="navbar-brand" href="index.html">
                             <img class="logo-default" src="./images/anu-logo.png" alt="logo" />
-                            <img class="logo-retina" src="./images/anu-logo.png" alt="logo" />
+                            <img class="logo-retina" src="./images/logo-retina-black.png" alt="logo" />
                         </a>
                     </div>
                     <div class="collapse navbar-collapse">
@@ -60,7 +60,7 @@
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">产品 <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="#">电子邮件营销</a></li>
-                                        <li><a href="#">短信营销</a></li>
+                                        <li><a href="sms-cn.html">短信营销</a></li>
                                         <li><a href="telemarketing-cn.html">电话销售与呼叫中心</a></li>
                                         <li><a href="ads-audience-cn.html">广告平台人群同步</a></li>
                                         <li><a href="#">社交平台营销</a></li>
@@ -95,7 +95,7 @@
                         与中国的客户通过电子邮件、短信、电话销售、电话客服、广告平台、社交网络进行互动。原生 Salesforce 解决方案，内的数据安全的保留在 Salesforce。
                     </p>
                     <hr class="space m" />
-                    <a href="mailto:sales@anukj.com" target="_blank" class="circle-button btn btn-lg btn-border">预约系统演示</a>
+                    <a href="mailto:sales@anukj.com?Subject=Request%20DEMO" target="_blank" class="circle-button btn btn-lg btn-border">预约系统演示</a>
                     <hr class="space l" />
                 </div>
                 <div class="col-md-3 hidden-sm">
@@ -112,7 +112,7 @@
                 <tbody>
                     <tr>
                         <td>
-                            <div class="advs-box advs-box-top-icon boxed-inverse shadow-1" data-anima="pulse" data-trigger="hover">                                
+                            <div class="advs-box advs-box-top-icon boxed-inverse shadow-1">                                
                                 <img src="./images/email.png" width="80px" height="80px">
                                 <h3 class="text-m">电子邮件</h3>
                                 <p>
@@ -122,17 +122,17 @@
                             </div>
                         </td>
                         <td>
-                            <div class="advs-box advs-box-top-icon boxed-inverse shadow-1" data-anima="pulse" data-trigger="hover">
+                            <div class="advs-box advs-box-top-icon boxed-inverse shadow-1">
                                 <img src="./images/sms.png" width="80px" height="80px">
                                 <h3 class="text-m">手机短信</h3>
                                 <p>
                                     向中国客户发送营销短信，短信内容通过审核后不被三大运营商拦截.<br /><br /><br /><br />
                                 </p>
-                                <a href="#" class="circle-button btn-border btn btn-lg">了解详情</a>
+                                <a href="sms-cn.html" class="circle-button btn-border btn btn-lg">了解详情</a>
                             </div>
                         </td>
                         <td>
-                            <div class="advs-box advs-box-top-icon boxed-inverse shadow-1" data-anima="pulse" data-trigger="hover">
+                            <div class="advs-box advs-box-top-icon boxed-inverse shadow-1">
                                 <img src="./images/telemarketing.png" width="80px" height="80px">
                                 <h3 class="text-m">电话销售</h3>
                                 <p>
@@ -142,7 +142,7 @@
                             </div>
                         </td>
                         <td>
-                            <div class="advs-box advs-box-top-icon boxed-inverse shadow-1" data-anima="pulse" data-trigger="hover">
+                            <div class="advs-box advs-box-top-icon boxed-inverse shadow-1">
                                 <img src="./images/advertising.png" width="80px" height="80px">
                                 <h3 class="text-m">广告平台</h3>
                                 <p>
@@ -152,7 +152,7 @@
                             </div>
                         </td>
                         <td>
-                            <div class="advs-box advs-box-top-icon boxed-inverse shadow-1" data-anima="pulse" data-trigger="hover">
+                            <div class="advs-box advs-box-top-icon boxed-inverse shadow-1">
                                 <img src="./images/wechat.png" width="80px" height="80px">
                                 <h3 class="text-m">社交平台</h3>
                                 <p>
@@ -219,9 +219,9 @@
                         </div>
                     </div>
                     <hr class="space m" />
-                    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" class="form-box" method="post">
-                        <input type="hidden" name="oid" value="00D2w000003wYBa">
-                        <input type="hidden" name="retURL" value="https://anukj.com">
+                    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" class="form-box form-ajax" method="post">
+                        <input type=hidden name="oid" value="00D2w000003wYBa">
+                        <input type=hidden name="retURL" value="http://">
                         <div class="row">
                             <div class="col-md-6">
                                 <p>姓名</p>
@@ -236,7 +236,7 @@
                             <div class="col-md-12">
                                 <hr class="space xs" />
                                 <p>手机号</p>
-                                <input id="phone" maxlength="40" name="phone" size="20" placeholder="手机号码" type="tel" class="form-control form-value" required>
+                                <input id="mobile" maxlength="40" name="mobile" size="20" placeholder="手机号码" type="text" class="form-control form-value">
                                 <hr class="space xs" />
                                 <p>内容</p>
                                 <textarea id="description" name="description" class="form-control form-value" required></textarea>
@@ -244,12 +244,12 @@
                                 <button class="btn-sm btn" type="submit">发送消息</button>
                             </div>
                         </div>
-                        <!--<div class="success-box">
+                        <div class="success-box">
                             <div class="alert alert-success">您的消息已经成功发送！</div>
                         </div>
                         <div class="error-box">
                             <div class="alert alert-warning">请重试，消息发送失败。</div>
-                        </div>-->
+                        </div>
                     </form>
                     <hr class="space s" />
                     <div class="tag-row icon-row icon-row-circle text-s">

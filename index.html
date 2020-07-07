@@ -47,7 +47,7 @@
                         </button>
                         <a class="navbar-brand" href="index.html">
                             <img class="logo-default" src="./images/anu-logo.png" alt="logo" />
-                            <img class="logo-retina" src="./images/anu-logo.png" alt="logo" />
+                            <img class="logo-retina" src="./images/logo-retina-black.png" alt="logo" />
                         </a>
                     </div>
                     <div class="collapse navbar-collapse">
@@ -60,7 +60,7 @@
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Products <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="#">Email Marketing</a></li>
-                                        <li><a href="#">SMS Marketing</a></li>
+                                        <li><a href="sms.html">SMS Marketing</a></li>
                                         <li><a href="telemarketing.html">Telemarketing & Call Center</a></li>
                                         <li><a href="ads-audience.html">Advertising Audience</a></li>
                                         <li><a href="#">Social Marketing</a></li>
@@ -95,7 +95,7 @@
                         Engage customers in China through emails, SMS, telemarketing, advertising network and social networks within Salesforce. Native Salesforce solution, your data remain safe within Salesforce.
                     </p>
                     <hr class="space m" />
-                    <a href="mailto:sales@anukj.com" target="_blank" class="circle-button btn btn-lg btn-border">Request DEMO</a>
+                    <a href="mailto:sales@anukj.com?Subject=Request%20DEMO" target="_blank" class="circle-button btn btn-lg btn-border">Request DEMO</a>
                     <hr class="space l" />
                 </div>
                 <div class="col-md-3 hidden-sm">
@@ -112,7 +112,7 @@
                 <tbody>
                     <tr>
                         <td>
-                            <div class="advs-box advs-box-top-icon boxed-inverse shadow-1" data-anima="pulse" data-trigger="hover">                                
+                            <div class="advs-box advs-box-top-icon boxed-inverse shadow-1">                                
                                 <img src="./images/email.png" width="80px" height="80px">
                                 <h3 class="text-m">Email</h3>
                                 <p>
@@ -122,17 +122,17 @@
                             </div>
                         </td>
                         <td>
-                            <div class="advs-box advs-box-top-icon boxed-inverse shadow-1" data-anima="pulse" data-trigger="hover">
+                            <div class="advs-box advs-box-top-icon boxed-inverse shadow-1">
                                 <img src="./images/sms.png" width="80px" height="80px">
                                 <h3 class="text-m">SMS</h3>
                                 <p>
                                     Be able to send Chinese charactors in SMS through China local mobile network operator: China Mobile, China Unicom & China Telecom; NOT blocked.
                                 </p>
-                                <a href="#" class="circle-button btn-border btn btn-lg">See more</a>
+                                <a href="sms.html" class="circle-button btn-border btn btn-lg">See more</a>
                             </div>
                         </td>
                         <td>
-                            <div class="advs-box advs-box-top-icon boxed-inverse shadow-1" data-anima="pulse" data-trigger="hover">
+                            <div class="advs-box advs-box-top-icon boxed-inverse shadow-1">
                                 <img src="./images/telemarketing.png" width="80px" height="80px">
                                 <h3 class="text-m">Telemarketing</h3>
                                 <p>
@@ -142,7 +142,7 @@
                             </div>
                         </td>
                         <td>
-                            <div class="advs-box advs-box-top-icon boxed-inverse shadow-1" data-anima="pulse" data-trigger="hover">
+                            <div class="advs-box advs-box-top-icon boxed-inverse shadow-1">
                                 <img src="./images/advertising.png" width="80px" height="80px">
                                 <h3 class="text-m">Advertising</h3>
                                 <p>
@@ -152,7 +152,7 @@
                             </div>
                         </td>
                         <td>
-                            <div class="advs-box advs-box-top-icon boxed-inverse shadow-1" data-anima="pulse" data-trigger="hover">
+                            <div class="advs-box advs-box-top-icon boxed-inverse shadow-1">
                                 <img src="./images/wechat.png" width="80px" height="80px">
                                 <h3 class="text-m">Social</h3>
                                 <p>
@@ -219,9 +219,9 @@
                         </div>
                     </div>
                     <hr class="space m" />
-                    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" class="form-box" method="post">
-                        <input type="hidden" name="oid" value="00D2w000003wYBa">
-                        <input type="hidden" name="retURL" value="https://anukj.com">
+                    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" class="form-box form-ajax" method="post">
+                        <input type=hidden name="oid" value="00D2w000003wYBa">
+                        <input type=hidden name="retURL" value="http://">
                         <div class="row">
                             <div class="col-md-6">
                                 <p>Name</p>
@@ -236,7 +236,7 @@
                             <div class="col-md-12">
                                 <hr class="space xs" />
                                 <p>Mobile</p>
-                                <input id="phone" maxlength="40" name="phone" size="20" placeholder="Mobile" type="tel" class="form-control form-value" required>
+                                <input id="mobile" maxlength="40" name="mobile" size="20" placeholder="Mobile" type="text" class="form-control form-value">
                                 <hr class="space xs" />
                                 <p>Messagge</p>
                                 <textarea id="description" name="description" class="form-control form-value" required></textarea>
@@ -244,12 +244,12 @@
                                 <button class="btn-sm btn" type="submit">Send messagge</button>
                             </div>
                         </div>
-                        <!--<div class="success-box">
+                        <div class="success-box">
                             <div class="alert alert-success">Congratulations. Your message has been sent successfully</div>
                         </div>
                         <div class="error-box">
                             <div class="alert alert-warning">Error, please retry. Your message has not been sent</div>
-                        </div>-->
+                        </div>
                     </form>
                     <hr class="space s" />
                     <div class="tag-row icon-row icon-row-circle text-s">

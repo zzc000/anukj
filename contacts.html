@@ -41,7 +41,7 @@
                         </button>
                         <a class="navbar-brand" href="index.html">
                             <img class="logo-default" src="./images/anu-logo.png" alt="logo" />
-                            <img class="logo-retina" src="./images/anu-logo.png" alt="logo" />
+                            <img class="logo-retina" src="./images/logo-retina-black.png" alt="logo" />
                         </a>
                     </div>
                     <div class="collapse navbar-collapse">
@@ -54,7 +54,7 @@
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Products <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="#">Email Marketing</a></li>
-                                        <li><a href="#">SMS Marketing</a></li>
+                                        <li><a href="sms.html">SMS Marketing</a></li>
                                         <li><a href="telemarketing.html">Telemarketing & Call Center</a></li>
                                         <li><a href="ads-audience.html">Advertising Audience</a></li>
                                         <li><a href="#">Social Marketing</a></li>
@@ -78,16 +78,14 @@
     <div class="section-empty">
         <div class="container content">
             <div class="google-map row-17" >
-                <iframe style="width: 1140px; height:425px;" src="https://api.map.baidu.com/staticimage?width=1140&height=425&center=121.476884,30.974942&zoom=15&markers=116.401889,39.904725|121.476776,30.974633&markerStyles=l,0|l,1" allowfullscreen></iframe>
+                <iframe style="width: 1140px; height:425px;" src="http://api.map.baidu.com/staticimage?width=1140&height=425&center=121.476884,30.974942&zoom=15&markers=116.401889,39.904725|121.476776,30.974633&markerStyles=l,0|l,1" allowfullscreen></iframe>
             </div>
             <hr class="space" />
             <div class="row proporzional-row">
                 <div class="col-md-6 col-sm-12">
                     <h2 class="text-color">Contact us now</h2>
                     <hr class="space s" />
-                    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" class="form-box" method="post">
-                        <input type="hidden" name="oid" value="00D2w000003wYBa">
-                        <input type="hidden" name="retURL" value="https://anukj.com">
+                    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" class="form-box form-ajax" method="post">
                         <div class="row">
                             <div class="col-md-4">
                                 <p>Your name</p>
@@ -99,7 +97,7 @@
                             </div>
                             <div class="col-md-4">
                                 <p>Phone number</p>
-                                <input id="phone" maxlength="40" name="phone" size="20" placeholder="136 xxxx xxxx" type="tel" class="form-control form-value" required>
+                                <input id="mobile" maxlength="40" name="mobile" size="20" placeholder="136 xxxx xxxx" type="text" class="form-control form-value">
                             </div>
                         </div>
                         <hr class="space xs" />
@@ -111,12 +109,12 @@
                                 <button class="btn-sm btn circle-button" type="submit"><i class="fa fa-envelope-o"></i>Send messagge</button>
                             </div>
                         </div>
-                        <!--<div class="success-box">
+                        <div class="success-box">
                             <div class="alert alert-success">Congratulations. Your message has been sent successfully</div>
                         </div>
                         <div class="error-box">
                             <div class="alert alert-warning">Error, please retry. Your message has not been sent</div>
-                        </div>-->
+                        </div>
                     </form>
 
                 </div>
@@ -188,6 +186,7 @@
         <link rel="stylesheet" href="./HTWF/scripts/font-awesome/css/font-awesome.css">
         <script async src="./HTWF/scripts/bootstrap/js/bootstrap.min.js"></script>
         <script src="./HTWF/scripts/imagesloaded.min.js"></script>
+        <script src="./HTWF/scripts/google.maps.min.js"></script>
         <script src="./HTWF/scripts/jquery.tab-accordion.js"></script>
         <script src="./HTWF/scripts/smooth.scroll.min.js"></script>
     </footer>
